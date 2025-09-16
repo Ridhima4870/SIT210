@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Arduino Traffic Light Control</title>
+</head>
+<body>
+  <h1>Traffic Light Control</h1>
+
+  <button onclick="toggleLED('red')">Toggle Red</button>
+  <button onclick="toggleLED('green')">Toggle Green</button>
+  <button onclick="toggleLED('blue')">Toggle Blue</button>
+
+  <script>
+    const databaseURL = "https://arduino-led-control-ec260-default-rtdb.firebaseio.com/ledCommand.json";
+
+    function toggleLED(color) {
+      fetch(databaseURL, {
+        method: 'PUT', 
+        body: JSON.stringify(color),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })
+      .then(response => response.json())
+      .then(data => console.log("LED command sent:", data))
+      .catch(error => console.error("Error:", error));
+    }
+  </script>
+</body>
+</html>
