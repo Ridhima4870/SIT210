@@ -1,17 +1,16 @@
-Pet Tracker System
+# Pet Tracker System
 
 # Overview
-The **Pet Tracker System** is an embedded IoT project designed to monitor a pet’s movement, location, and environmental conditions in real time.  
-The system combines microcontroller and single-board computer technologies (Arduino Nano 33 IoT and Raspberry Pi 4) to collect data from sensors and transmit it to a cloud platform for analysis and visualization.
+The Pet Tracker System is an embedded IoT project designed to monitor a pet’s movement, location, and environmental conditions in real time.  
+The system combines microcontroller (Arduino Nano 33 IoT and Raspberry Pi 4) to collect data from sensors and transmit it to a cloud platform for analysis and visualization.
 
 This repository presents the system design, planned architecture, and development workflow for the prototype, which is currently under construction.
 
----
 
-## Objectives
-- To develop an IoT-based tracking system that records a pet’s **location (GPS)** and **activity (gyroscope)**.  
-- To sense **temperature and humidity** in the pet’s environment using a DHT22 sensor.  
-- To use **Raspberry Pi** for data processing, MQTT communication, and database storage.  
+# Objectives
+- To develop an IoT-based tracking system that records a pet’s location (GPS) and activity (gyroscope).  
+- To sense temperature and humidity in the pet’s environment using a DHT22 sensor.  
+- To use Raspberry Pi for data processing, MQTT communication, and database storage.  
 - To visualize collected data through a **Plotly Dash dashboard** showing location, movement, and environmental trends.  
 
 ---
