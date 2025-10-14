@@ -1,4 +1,4 @@
-# Pet Tracker System
+Pet Tracker System
 
 ## Overview
 The **Pet Tracker System** is an embedded IoT project designed to monitor a pet’s movement, location, and environmental conditions in real time.  
