@@ -1,6 +1,6 @@
 Pet Tracker System
 
-## Overview
+# Overview
 The **Pet Tracker System** is an embedded IoT project designed to monitor a pet’s movement, location, and environmental conditions in real time.  
 The system combines microcontroller and single-board computer technologies (Arduino Nano 33 IoT and Raspberry Pi 4) to collect data from sensors and transmit it to a cloud platform for analysis and visualization.
 
